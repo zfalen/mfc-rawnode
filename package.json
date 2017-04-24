@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/zfalen/mfc-rawnode/issues"
   },
-  "homepage": "https://github.com/zfalen/mfc-rawnode#readme"
+  "homepage": "https://github.com/zfalen/mfc-rawnode#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "webpack": "^2.4.1"
+  }
 }

@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Missoula Fishing Company</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <!-- JQUERY -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles-min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+
+  <div class="topbar">
+    <p><span class="text-thin">Call to schedule a trip: </span><strong>406-544-5208</strong></p>
+  </div>
+
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="./img/MFC_logo.png"></img></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="./waters.html">Our Waters <span class="sr-only">(current)</span></a></li>
+        <li><a href="./town.html">Our Town</a></li>
+        <li><a href="./trips.html">Our Trips</a></li>
+        <li><a href="./story.html">Our Story</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Social Media Icons</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="jumbotron header-img">
+    <div class="container-fluid">
+      <h1 class="white">Experience World Class Fly Fishing from a Classic Mountain Town</h1>
+
+      <!-- HEADER IMG -->
+      <div class="img-overlay"></div>
+      <img class="img-responsive" src="./img/mocast.jpg"></img>
+    </div>
+  </div>
+
+  <div class="container main-content">
+    <div class="top-callout-text">
+      <h2 class="text-center text-medium">Five of Earth’s great trout rivers flow through our home town. It’s why our first, second and third love are fishing, fishing and, well, fishing.</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-xs-12 home-feature-block">
+        <h4>An Unmatched Fishing Experience</h4>
+        <img src="./img/fish_net.png"></img>
+        <p>Cutthroat, brown, rainbow, brook and bull trout. Famed rivers, Blue Ribbon streams, creeks, tailwaters and lakes.  No one destination has more varied opportunities.</p>
+        <button type="button" class="btn ghost-btn green" onclick="window.location.href = './waters.html'">Our Waters</button>
+      </div>
+      <div class="col-md-4 col-xs-12 home-feature-block">
+        <h4>Montana's Garden City</h4>
+        <img src="./img/clark_fork.png"></img>
+        <p>Missoula is a place that’s easy to fall in love with. Within a double haul of town, you’ll find a lifetime of trout water, vibrant city markets, great restaurants and endless Montana character.</p>
+        <button type="button" class="btn ghost-btn green">Our Town</button>
+      </div>
+      <div class="col-md-4 col-xs-12 home-feature-block">
+        <h4>The Pefect Day, Every Day</h4>
+        <img src="./img/big_brown.png"></img>
+        <p>At MFC, we guarantee a great day with an accomplished guide who will work to the bone to put you on fish, feed you well and show you what our little corner of the world is all about.</p>
+        <button type="button" class="btn ghost-btn green" onclick="window.location.href = './trips.html'">Our Trips</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron cast-and-blast">
+    <div class="container-fluid">
+      <div class="info-text white">
+      <h1 class="text-thin">Cast And Blast</h1>
+      <br/>
+      <br/>
+      <p class="text-thin">Just imagine a fantastic morning shoot, followed up by a great day of Baetis fishing in the afternoon. MFC is proud to offer Pheasant and Chukar hunting in partnership with Rooster Ridge Pheasant  Club, a shooting preserve just a few minutes from Missoula overlooking the Clark Fork River bottom.</p>
+      <button type="button" class="btn ghost-btn white">Cast and Blast Opportunites</button>
+      </div>
+
+      <!-- HEADER IMG -->
+      <div class="img-overlay"></div>
+      <img class="img-responsive" src="./img/cast_blast.png"></img>
+    </div>
+  </div>
+
+  <div id="home-bottom" class="container">
+    <div class="col-md-6 col-xs-12 home-bottom-block">
+      <h4>Contact</h4>
+      <hr>
+
+      <label for="name-input">Your Name</label>
+      <input type="text" class="form-control" id="name-input">
+
+      <label for="email-input">Your Email</label>
+      <input type="text" class="form-control" id="email-input">
+
+      <label for="subject-input">Subject</label>
+      <input type="text" class="form-control" id="subject-input">
+
+      <label for="message-input">Message</label>
+      <textarea type="text" class="form-control" id="message-input"></textarea>
+
+
+
+      <button type="button" class="btn ghost-btn blue">Submit</button>
+    </div>
+
+    <div class="col-md-6 col-xs-12 home-bottom-block">
+      <h4>Missoula</h4>
+      <hr>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87274.7854852042!2d-114.0882068496797!3d46.8764174879324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535dcc2a50f367cb%3A0xe9e31277ca94802e!2sMissoula%2C+MT!5e0!3m2!1sen!2sus!4v1490852449031" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+  </div>
+
+  <hr/>
+
+  <footer>
+    Copyright ©2017 Missoula Fishing Company - Missoula, Montana.
+  </footer>
+
+
+  <script src="js/scripts-min.js"></script>
+</body>
+</html>
