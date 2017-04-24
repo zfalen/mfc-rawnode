@@ -1,0 +1,19 @@
+{
+  "name": "missoula_fishing_co_basic_node",
+  "version": "1.0.0",
+  "description": "Missoula Fishing Co - Basic Node for Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfalen/mfc-rawnode.git"
+  },
+  "author": "Zachary M Falen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zfalen/mfc-rawnode/issues"
+  },
+  "homepage": "https://github.com/zfalen/mfc-rawnode#readme"
+}
