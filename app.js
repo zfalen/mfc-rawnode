@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === 'production') {
 // LAUNCH THE SERVER
 const server = http.createServer(app);
 const port = process.env.PORT || 8080;
-server.listen(8080);
+server.listen(port);
 server.on('listening', ()=>{
   console.log('listening on port ' + port);
 });
