@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const sendEmail = require('./email_config.js');
+const bodyParser = require('body-parser');
+
+router.use(bodyParser.json());
 
 router.get('/', (req,res)=>{
   res.render('index');
@@ -27,6 +31,11 @@ router.get('/cast-and-blast', (req,res)=>{
 
 router.get('/media', (req,res)=>{
   res.render('media');
+});
+
+router.post('/email', (req,res)=>{
+  console.log(req);
+  res.status(200).send({derp: 'yes'})
 });
 
 module.exports = router;

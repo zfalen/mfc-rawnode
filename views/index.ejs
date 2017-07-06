@@ -137,7 +137,7 @@
 
 
 
-      <button type="button" class="btn ghost-btn blue">Submit</button>
+      <button type="button" class="btn ghost-btn blue" onclick="sendEmail()">Submit</button>
     </div>
 
     <div class="col-md-6 col-xs-12 home-bottom-block">
@@ -154,5 +154,40 @@
   <footer>
     Copyright ©2017 Missoula Fishing Company - Missoula, Montana.
   </footer>
+
+  <script>
+    function sendEmail() {
+      var name = $("#name-input").val();
+      var email = $("#email-input").val();
+      var subject = $("#subject-input").val();
+      var message = $("#message-input").val();
+
+      console.log(name);
+
+      var formData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      };
+
+      console.log(formData);
+
+      $.ajax({
+        url : "/email",
+        type: "POST",
+        data : formData,
+        success: function(data, textStatus, jqXHR)
+        {
+            alert('success')
+        },
+        error: function (jqXHR, textStatus, errorThrown)
+        {
+          console.log(jqXHR)
+        }
+      });
+
+    }
+  </script>
 </body>
 </html>
