@@ -21,4 +21,8 @@ router.get('/story', (req,res)=>{
   res.render('story');
 });
 
+router.get('/cast-and-blast', (req,res)=>{
+  res.render('cast-and-blast');
+});
+
 module.exports = router;
