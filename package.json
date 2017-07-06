@@ -9,7 +9,7 @@
     "build": "npm run clean && npm run build:webpack && node app",
     "build-production": "npm run clean && npm run build:webpack",
     "start": "node app.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build-production"
   },
   "repository": {
     "type": "git",
