@@ -25,4 +25,8 @@ router.get('/cast-and-blast', (req,res)=>{
   res.render('cast-and-blast');
 });
 
+router.get('/media', (req,res)=>{
+  res.render('media');
+});
+
 module.exports = router;
