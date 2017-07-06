@@ -7,6 +7,7 @@
     "clean": "rimraf static",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack && node app",
+    "build-production": "npm run clean && npm run build:webpack",
     "start": "node app.js",
     "heroku-postbuild": "npm run build"
   },
