@@ -171,12 +171,12 @@
         message: message
       };
 
-      console.log(formData);
-
       $.ajax({
         url : "/email",
         type: "POST",
-        data : formData,
+        contentType: "application/json",
+        dataType: "json",
+        data : JSON.stringify(formData),
         success: function(data, textStatus, jqXHR)
         {
             alert('success')

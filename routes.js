@@ -34,8 +34,15 @@ router.get('/media', (req,res)=>{
 });
 
 router.post('/email', (req,res)=>{
-  console.log(req);
-  res.status(200).send({derp: 'yes'})
+  sendEmail(req.body.name, req.body.email, req.body.subject, req.body.message)
+    .then((message) => {
+      console.log(message);
+      res.status(200).end();
+    })
+    .catch((e) => {
+      console.log(e);
+      res.status(500).end();
+    })
 });
 
 module.exports = router;

@@ -3,6 +3,8 @@ const app = express();
 const fs = require('fs');
 const http = require('http');
 
+require('dotenv').config();
+
 app.set('view engine', 'ejs');
 
 //serve public assets at /public
